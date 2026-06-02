@@ -25,6 +25,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
+      <div className="h-1 w-full bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand Section */}
@@ -36,8 +37,8 @@ const Footer = () => {
               <p className="text-gray-400 mt-2">Full Stack Developer</p>
             </div>
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
-              Passionate about creating innovative web solutions and scalable applications. 
-              Always learning, always building, always improving.
+              I design and ship scalable, production-grade web platforms — ERP systems, AI tools,
+              and cloud solutions. Always learning, always building, always improving.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (

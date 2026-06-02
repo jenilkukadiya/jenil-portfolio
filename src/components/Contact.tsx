@@ -94,8 +94,9 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section id="contact" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div className="absolute bottom-0 -right-20 w-80 h-80 bg-purple-200/30 rounded-full blur-3xl -z-0" />
+      <div className="relative max-w-7xl mx-auto">
         <Reveal className="text-center mb-16">
           <span className="inline-block mb-4 px-4 py-1.5 rounded-full text-sm font-semibold text-blue-700 bg-blue-100/70 border border-blue-200">
             Contact

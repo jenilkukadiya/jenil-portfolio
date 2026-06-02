@@ -8,7 +8,7 @@ const Education = () => {
       degree: "Bachelor of Engineering in Computer Engineering",
       institution: "Nirma University",
       location: "Ahmedabad, Gujarat, India",
-      grade: "CGPA: 8.2/10",
+      grade: "CGPA: 9.6/10",
       description: "Specialized in software engineering, data structures, algorithms, and computer systems. Completed projects in web development, database management, and software design.",
       highlights: [
         "President of CodeAdda - Provided environment for DSA practice",
@@ -43,7 +43,7 @@ const Education = () => {
     },
     {
       title: "Academic Excellence",
-      description: "Maintained consistent academic performance with 8.2 CGPA throughout the program"
+      description: "Maintained consistent academic performance with 9.6 CGPA throughout the program"
     }
   ];
 
@@ -159,7 +159,7 @@ const Education = () => {
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
                   <span className="text-gray-600">Overall CGPA</span>
-                  <span className="font-semibold text-blue-600">8.2/10</span>
+                  <span className="font-semibold text-blue-600">9.6/10</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-600">Specialization</span>
