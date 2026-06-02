@@ -1,8 +1,28 @@
 import React from 'react';
-import { Code, Shield, Stethoscope, Factory, Package, Gem } from 'lucide-react';
+import { Code, Shield, Stethoscope, Factory, Package, Gem, Sparkles } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
+    {
+      title: "EmbroidAI – AI Embroidery Sample Generator",
+      description: "An AI-powered tool that generates photorealistic embroidery sample previews directly from a design image — eliminating the cost and turnaround time of producing physical samples. The system auto-detects color zones in a design using computer-vision segmentation, maps each zone to a chosen material from a reusable library (thread, jari, dori, sequence), and renders a lifelike preview complete with 3D thread texture, metallic highlights, and drop shadows.",
+      icon: <Sparkles className="w-8 h-8" />,
+      iconColor: "text-pink-600",
+      iconBg: "bg-pink-100",
+      technologies: ["Python", "FastAPI", "OpenCV", "scikit-image", "NumPy", "Pillow", "SQLAlchemy", "Computer Vision"],
+      features: [
+        "Generates photorealistic embroidery previews from a single design photo",
+        "Computer-vision color-zone segmentation (one needle per detected color)",
+        "Reusable material library — thread, jari, dori & sequence",
+        "Per-zone material assignment for fully customized previews",
+        "Dual rendering pipelines for line-art and filled-region designs",
+        "3D thread texture, metallic highlights & shadows for realism",
+        "Instant PNG export and shareable client previews",
+        "Removes the need for costly, time-consuming physical samples"
+      ],
+      status: "Completed",
+      statusColor: "bg-green-100 text-green-800"
+    },
     {
       title: "StitchFlow ERP – Garment Manufacturing Platform",
       description: "A full-stack, multi-tenant SaaS ERP that digitizes end-to-end operations for garment and stitching manufacturers — from design and production tracking to workforce, inventory, and financial reporting. Engineered on Next.js 15 and React 19 with a PostgreSQL backend, organization-level data isolation, granular role-based access, and AI-assisted insights.",
@@ -183,14 +203,10 @@ const Projects = () => {
         </div>
 
         {/* Project Stats */}
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="text-center bg-white rounded-xl p-6 shadow-lg">
-            <div className="text-3xl font-bold text-blue-600 mb-2">5+</div>
-            <div className="text-gray-600">Projects Delivered</div>
-          </div>
-          <div className="text-center bg-white rounded-xl p-6 shadow-lg">
-            <div className="text-3xl font-bold text-green-600 mb-2">3</div>
-            <div className="text-gray-600">Production Platforms</div>
+            <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
+            <div className="text-gray-600">Projects Completed</div>
           </div>
           <div className="text-center bg-white rounded-xl p-6 shadow-lg">
             <div className="text-3xl font-bold text-purple-600 mb-2">15+</div>
