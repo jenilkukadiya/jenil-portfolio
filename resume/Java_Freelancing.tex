@@ -1,0 +1,214 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Jenil Kukadiya} \\ \vspace{1pt}
+    Ahmedabad, India \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}{\faPhone} 9909072743 ~ 
+    \href{mailto:jenilkukadiya82@gmail.com}{\raisebox{-0.2\height}{\faEnvelope} \underline{jenilkukadiya82@gmail.com}} ~ 
+    \href{https://linkedin.com/in/jenil-kukadiya-341925210/}{\raisebox{-0.2\height}{\faLinkedin} \underline{linkedin.com/in/jenil-kukadiya-341925210}} ~
+    \href{https://github.com/jenil_kukadiya}{\raisebox{-0.2\height}{\faGithub} \underline{github.com/jenil\_kukadiya}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Nirma University}{Ahmedabad, Gujarat}
+      {B.Tech in Computer Science Engineering}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}: C++, Java, C, SQL, PostgreSQL, Python, HTML/CSS \\
+     \textbf{Frameworks/Libraries}: Spring Boot, Spring MVC, Node.js \\
+     \textbf{Developer Tools}: Git, GitHub, VS Code, IntelliJ, Eclipse \\
+     \textbf{Core Concepts}: Data Structures and Algorithms, Competitive Coding, Database Management Systems, Operating Systems, Object-Oriented Programming \\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeItemListStart
+
+    \resumeSubheading
+  {Freelance Full Stack Developer}{Feb. 2021 -- Present}
+  {Remote}{}
+  \resumeItemListStart
+    \resumeItem{Developed and maintained enterprise-grade applications using \textbf{Spring Boot} and \textbf{React.js}, following clean architecture and microservice principles.}
+    \resumeItem{Built and integrated \textbf{RESTful APIs} across distributed services with secure authentication, logging, and role-based access control.}
+    \resumeItem{Containerized microservices using \textbf{Docker} and managed CI/CD pipelines via \textbf{Azure DevOps} for automated deployments to QA and production.}
+    \resumeItem{Implemented multi-environment configurations using \textbf{Spring Profiles} and externalized property management for flexible deployments.}
+    \resumeItem{Collaborated with clients to gather requirements, estimate scope, and deliver fully tested features using agile methodologies and version control practices.}
+    \resumeItem{Utilized Azure services such as \textbf{App Services}, \textbf{Blob Storage}, and \textbf{Key Vault} to enhance scalability, security, and observability.}
+  \resumeItemListEnd
+
+  
+    \resumeSubheading
+      {SDE 1}{Jul. 2024 -- Present}
+      {Ajmera Infotech}{Ahmedabad, India}
+      \resumeItemListStart
+        \resumeItem{Developed a microservice for email journey management using \textbf{Node.js} and \textbf{Zoho CRM APIs}.}
+        \resumeItem{Built RESTful APIs, optimized database performance, and worked on microservices architecture.}
+        \resumeItem{Integrated third-party services for scalability and enhanced system functionality.}
+        \resumeItem{Designed and implemented a \textbf{Team Management System} to automate HR operations using \textbf{Bubble.io}, \textbf{AWS Lambda}, and \textbf{API Gateway}.}
+        \resumeItem{Fetched worked hours from \textbf{Zoho People Plus} and validated them against policy rules (e.g., full-day, half-day, weekends). Triggered alert emails if minimum criteria were not met.}
+        \resumeItem{Integrated \textbf{Jira} to extract client-specific employee worklogs for accurate billing.}
+        \resumeItem{Developed multiple admin dashboards (Departments, Skills, Roles, Batches, etc.) as per manager requirements with role-based access.}
+      \resumeItemListEnd
+    \vspace{-1em} % Adjust this value if needed
+    \resumeSubheading
+      {SDE Intern}{Jan. 2024 -- Jun. 2024}
+      {Ajmera Infotech}{Ahmedabad, India}
+      \resumeItemListStart
+        \resumeItem{Enhanced RedPen with Spring Boot and PostgreSQL, collaborating with cross-functional teams to resolve bugs, optimize database queries, and improve the admin panel’s usability, ensuring a seamless user experience.}
+        \resumeItem{Gained practical experience with AWS services, expanding understanding of cloud infrastructure applications.}
+        \resumeItem{Utilized AWS services (SQS, SNS, Cognito) to enhance microservice functionality, modifying backend code for seamless integration with AWS services.}
+      \resumeItemListEnd
+  \resumeItemListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeItemListStart
+
+  \resumeProjectHeading
+  {\textbf{SecureShots – Secure Gallery Sharing Platform} \hfill \emph{Spring Boot, React, Cloudinary, PostgreSQL, Docker}}{2023}
+\resumeItemListStart
+  \resumeItem{Built a password-protected gallery app allowing users to create and share photo albums with fine-grained access control.}
+  \resumeItem{Integrated Cloudinary to store photos using signed URLs, preventing unauthorized public access.}
+  \resumeItem{Implemented JWT-based login and role-based authorization to control secure user access.}
+  \resumeItem{Used PostgreSQL for managing users, galleries, and image metadata in a relational structure.}
+  \resumeItem{Developed REST APIs with Spring Boot and a responsive React.js frontend with conditional rendering.}
+  \resumeItem{Deployed backend on Render using Docker; configured CORS for secure communication between frontend and backend.}
+\resumeItemListEnd
+
+
+  \resumeProjectHeading
+    {\textbf{Hospital Management System (MERN Stack)} \hfill \emph{MongoDB, Express.js, React.js, Node.js, JWT}}{2022}
+    \resumeItemListStart
+      \resumeItem{Developed a comprehensive hospital management platform to streamline appointment scheduling, patient record management, and admin operations.}
+      \resumeItem{Implemented user roles for patients, doctors, and administrators, each with tailored dashboards and permissions.}
+      \resumeItem{Utilized JWT authentication and protected routes for secure access to sensitive medical data.}
+      \resumeItem{Designed RESTful APIs with Express and Node.js, and stored structured health and appointment data using MongoDB.}
+      \resumeItem{Created a responsive React frontend with Redux for global state management and dynamic routing.}
+      \resumeItem{Followed best practices for code structuring, security, and user experience throughout the application.}
+    \resumeItemListEnd
+
+\resumeItemListEnd
+
+
+
+
+%---------ACHIEVEMENTS-----------------
+\section{Achievements}
+\resumeItemListStart
+    \resumeItem{\textbf{Competitive Programming:}}
+    \begin{itemize}
+        \item \textbf{Expert} on Codeforces (\href{https://codeforces.com/profile/jenil_kukadiya}{jenilkukadiya}, Max: 1666)
+        \item \textbf{Guardian} on Leetcode (\href{https://leetcode.com/u/jenilkukadiya/}{jenilkukadiya}, Max: 2197)
+        \item Rank 445 in Leetcode Weekly Contest 358 (27k participants)
+        \item Rank 460 in Leetcode Weekly Contest 359 (27k participants)
+        \item Rank 472 in Google Kickstart E 2022 (18k participants)
+        \item ICPC Kanpur-Mathura 2022 Rank 384
+    \end{itemize}
+    
+\resumeItem{\textbf{Additional Links:}}
+    \begin{itemize}
+        \item \textbf{CodeChef}: \href{https://www.codechef.com/users/jenil_kukadiya}{jenilkukadiya}
+        \item \textbf{LinkedIn}: \href{https://www.linkedin.com/in/jenil-kukadiya-341925210/}{jenilkukadiya}
+    \end{itemize}
+\resumeItemListEnd
+
+\section{Campus Activities}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {CodeAdda Programming Club}{Oct. 2022 -- Nov. 2023}
+      {Member}{}
+      \resumeItemListStart
+        \resumeItem{Organised contests on various websites such as hackerrank,
+codeforces, etc to improve coding culture in our university. Took
+sessions for juniors as well as peers for teaching data structures
+and algorithms.}
+   \resumeSubHeadingListEnd
+
+
+% %-----------LEADERSHIP---------------
+% \section{Leadership \& Extracurricular}
+%   \resumeItemListStart
+%     \resumeSubheading
+%         {CODEADDA Programming Club}{Member}{2020 -- Present}
+%         \resumeItemListStart
+%             \resumeItem{Organized contests on Codeforces to improve coding culture at the university.}
+%             \resumeItem{Mentored juniors in programming, taught sessions on data structures and algorithms.}
+%         \resumeItemListEnd
+%   \resumeItemListEnd
+
+\end{document}
