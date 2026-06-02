@@ -10,6 +10,7 @@ const Projects = () => {
       icon: <Sparkles className="w-8 h-8" />,
       iconColor: "text-pink-600",
       iconBg: "bg-pink-100",
+      gradient: "from-pink-500 to-rose-500",
       technologies: ["Python", "FastAPI", "OpenCV", "scikit-image", "NumPy", "Pillow", "SQLAlchemy", "Computer Vision"],
       features: [
         "Generates photorealistic embroidery previews from a single design photo",
@@ -30,6 +31,7 @@ const Projects = () => {
       icon: <Factory className="w-8 h-8" />,
       iconColor: "text-blue-600",
       iconBg: "bg-blue-100",
+      gradient: "from-blue-600 to-indigo-600",
       technologies: ["Next.js 15", "React 19", "TypeScript", "PostgreSQL", "Drizzle ORM", "Firebase Auth", "AWS S3", "Tailwind CSS", "Recharts", "Genkit AI"],
       features: [
         "Multi-tenant architecture with organization-level data isolation",
@@ -50,6 +52,7 @@ const Projects = () => {
       icon: <Package className="w-8 h-8" />,
       iconColor: "text-purple-600",
       iconBg: "bg-purple-100",
+      gradient: "from-purple-600 to-fuchsia-600",
       technologies: ["Next.js 14", "React", "TypeScript", "Supabase", "Firebase", "TanStack Query", "Zustand", "Tailwind CSS", "Recharts"],
       features: [
         "Unified multi-marketplace integration (Meesho, Amazon, Flipkart, Myntra, Ajio)",
@@ -70,6 +73,7 @@ const Projects = () => {
       icon: <Gem className="w-8 h-8" />,
       iconColor: "text-yellow-600",
       iconBg: "bg-yellow-100",
+      gradient: "from-amber-500 to-yellow-500",
       technologies: ["Next.js", "React", "TypeScript", "Node.js", "MongoDB", "JWT", "Tailwind CSS", "Framer Motion"],
       features: [
         "Secure authentication with role-based admin access",
@@ -88,6 +92,7 @@ const Projects = () => {
       icon: <Stethoscope className="w-8 h-8" />,
       iconColor: "text-red-600",
       iconBg: "bg-red-100",
+      gradient: "from-red-500 to-rose-600",
       technologies: ["Next.js", "Spring Boot", "MongoDB", "Cloudinary", "JWT", "Tailwind CSS"],
       features: [
         "Doctor profile management",
@@ -106,6 +111,7 @@ const Projects = () => {
       icon: <Shield className="w-8 h-8" />,
       iconColor: "text-emerald-600",
       iconBg: "bg-emerald-100",
+      gradient: "from-emerald-500 to-teal-600",
       technologies: ["React", "Spring Boot", "MySQL", "JWT", "Cloudinary", "Bootstrap"],
       features: [
         "Admin-created, password-protected galleries",
@@ -138,23 +144,23 @@ const Projects = () => {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Reveal key={index} delay={(index % 2) * 0.08} className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
-              {/* Project Header */}
-              <div className="flex items-start justify-between mb-6">
-                <div className="flex items-center gap-4">
-                  <div className={`${project.iconBg} p-3 rounded-xl ${project.iconColor}`}>
-                    {project.icon}
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900">{project.title}</h3>
-                    <span className={`px-3 py-1 rounded-full text-sm font-medium ${project.statusColor}`}>
-                      {project.status}
-                    </span>
-                  </div>
+            <Reveal key={index} delay={(index % 2) * 0.08} className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+              {/* Gradient banner */}
+              <div className={`relative h-28 bg-gradient-to-br ${project.gradient} px-8 flex items-center justify-between overflow-hidden`}>
+                <div className="absolute -right-6 -top-10 w-32 h-32 rounded-full bg-white/10" />
+                <div className="absolute right-12 -bottom-6 w-20 h-20 rounded-full bg-white/10" />
+                <div className="relative flex items-center justify-center w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm text-white ring-1 ring-white/30 group-hover:scale-110 transition-transform duration-300">
+                  {project.icon}
                 </div>
+                <span className="relative px-3 py-1 rounded-full text-xs font-semibold bg-white/90 text-gray-800 shadow-sm">
+                  {project.status}
+                </span>
               </div>
 
-              <p className="text-gray-700 mb-6 leading-relaxed">{project.description}</p>
+              {/* Body */}
+              <div className="p-8 flex-1 flex flex-col">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{project.title}</h3>
+                <p className="text-gray-700 mb-6 leading-relaxed">{project.description}</p>
 
               {/* Features */}
               <div className="mb-6">
@@ -182,6 +188,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
+              </div>
               </div>
             </Reveal>
           ))}
