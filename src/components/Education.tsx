@@ -1,5 +1,6 @@
 import React from 'react';
 import { GraduationCap, MapPin, Award, ExternalLink } from 'lucide-react';
+import Reveal from './Reveal';
 
 const Education = () => {
   const education = [
@@ -49,14 +50,17 @@ const Education = () => {
   return (
     <section id="education" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <Reveal className="text-center mb-16">
+          <span className="inline-block mb-4 px-4 py-1.5 rounded-full text-sm font-semibold text-blue-700 bg-blue-100/70 border border-blue-200">
+            Academics
+          </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Education & <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Achievements</span>
+            Education & <span className="text-gradient">Achievements</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             My academic background and notable accomplishments
           </p>
-        </div>
+        </Reveal>
 
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Education Details */}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Code, Shield, Stethoscope, Factory, Package, Gem, Sparkles } from 'lucide-react';
+import Reveal from './Reveal';
 
 const Projects = () => {
   const projects = [
@@ -122,18 +123,21 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <Reveal className="text-center mb-16">
+          <span className="inline-block mb-4 px-4 py-1.5 rounded-full text-sm font-semibold text-blue-700 bg-blue-100/70 border border-blue-200">
+            Portfolio
+          </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Featured <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Projects</span>
+            Featured <span className="text-gradient">Projects</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             A selection of full-stack platforms and applications I've designed, built, and shipped to production.
           </p>
-        </div>
+        </Reveal>
 
         <div className="grid lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <Reveal key={index} delay={(index % 2) * 0.08} className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
               {/* Project Header */}
               <div className="flex items-start justify-between mb-6">
                 <div className="flex items-center gap-4">
@@ -178,7 +182,7 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
 
