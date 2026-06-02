@@ -51,10 +51,11 @@ const About = () => {
                 specialize in modern web technologies.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                I believe in writing clean, maintainable code and creating user-centric applications that 
-                solve real-world problems. My experience spans from frontend development with React and 
-                TypeScript to backend services with Node.js, Spring Boot, and cloud platforms. I also 
-                have hands-on experience with No-Code/Low-Code platforms like Bubble.io for rapid prototyping.
+                I believe in writing clean, maintainable code and creating user-centric applications that
+                solve real-world problems. My experience spans frontend development with React, Next.js and
+                TypeScript to backend services with Node.js, Spring Boot, and cloud platforms — and I've
+                delivered full-scale ERP and management systems running in production for real businesses.
+                I also have hands-on experience with No-Code/Low-Code platforms like Bubble.io for rapid prototyping.
               </p>
             </div>
 

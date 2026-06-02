@@ -51,14 +51,14 @@ const Hero = () => {
                 Jenil <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Kukadiya</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 font-medium">
-                Full Stack Developer
+                Full Stack Developer · Building Production-Grade Web Platforms
               </p>
             </div>
 
             <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Passionate about building scalable web applications with modern technologies. 
-              Experienced in React, Node.js, Spring Boot, and No-Code/Low-Code platforms like Bubble.io 
-              with a focus on creating exceptional user experiences and robust backend systems.
+              I design and ship scalable, end-to-end web platforms — from multi-tenant ERP and order-management
+              systems to dynamic business portals. Experienced across React, Next.js, Node.js and Spring Boot,
+              with a focus on robust backends, clean architecture, and exceptional user experiences.
             </p>
 
             {/* CTA Buttons */}

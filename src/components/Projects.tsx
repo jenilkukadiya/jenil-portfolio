@@ -1,117 +1,101 @@
 import React from 'react';
-import { Star, Code, Database, Globe, Shield, Link, Stethoscope, Shirt } from 'lucide-react';
+import { Code, Shield, Stethoscope, Factory, Package, Gem } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: "Library Management System",
-      description: "A comprehensive library management system built with React and Node.js. Features include book catalog management, member registration, book borrowing/returning, automated email notifications, and admin dashboard for complete library operations.",
-      icon: <Database className="w-8 h-8" />,
+      title: "StitchFlow ERP – Garment Manufacturing Platform",
+      description: "A full-stack, multi-tenant SaaS ERP that digitizes end-to-end operations for garment and stitching manufacturers — from design and production tracking to workforce, inventory, and financial reporting. Engineered on Next.js 15 and React 19 with a PostgreSQL backend, organization-level data isolation, granular role-based access, and AI-assisted insights.",
+      icon: <Factory className="w-8 h-8" />,
       iconColor: "text-blue-600",
       iconBg: "bg-blue-100",
-      technologies: ["React", "Node.js", "MongoDB", "Express.js", "EmailJS", "JWT"],
+      technologies: ["Next.js 15", "React 19", "TypeScript", "PostgreSQL", "Drizzle ORM", "Firebase Auth", "AWS S3", "Tailwind CSS", "Recharts", "Genkit AI"],
       features: [
-        "Book catalog with search and filters",
-        "Member registration and management",
-        "Book borrowing and returning system",
-        "Automated email notifications",
-        "Admin dashboard for library operations",
-        "Fine calculation for overdue books"
+        "Multi-tenant architecture with organization-level data isolation",
+        "Role-based access control for Super-Admin, Admin, Employee & Worker",
+        "Design, challan & production tracking with piece allocation",
+        "Live stock, fabric, cutting & dispatch management",
+        "Worker, machine/press scheduling & salary processing",
+        "Monthly profit & loss and financial reporting",
+        "PDF/Excel exports and barcode scanning",
+        "End-to-end tested with Playwright for production reliability"
       ],
-      status: "Completed",
-      statusColor: "bg-green-100 text-green-800"
+      status: "Production",
+      statusColor: "bg-blue-100 text-blue-800"
     },
     {
-      title: "SecureShort - Photo Gallery Management",
-      description: "A secure photo gallery management system where admins can create password-protected galleries and share them with users. Built with Spring Boot backend and React frontend, featuring secure access control and user-friendly interface.",
-      icon: <Shield className="w-8 h-8" />,
+      title: "OMS – Multi-Channel Order Management",
+      description: "A centralized order management system that unifies sales across Meesho, Amazon, Flipkart, Myntra and Ajio into a single dashboard. Delivers real-time inventory synchronization, SKU mapping, returns handling, and profit analytics tailored for garment businesses — built on Next.js with a Supabase (PostgreSQL) backend.",
+      icon: <Package className="w-8 h-8" />,
       iconColor: "text-purple-600",
       iconBg: "bg-purple-100",
-      technologies: ["React", "Spring Boot", "MySQL", "JWT", "Cloudinary", "Bootstrap"],
+      technologies: ["Next.js 14", "React", "TypeScript", "Supabase", "Firebase", "TanStack Query", "Zustand", "Tailwind CSS", "Recharts"],
       features: [
-        "Admin can create password-protected galleries",
-        "Photo upload and management system",
-        "Secure user access with password verification",
-        "Download and view options for users",
-        "Gallery sharing via secure links",
-        "Responsive design for all devices"
+        "Unified multi-marketplace integration (Meesho, Amazon, Flipkart, Myntra, Ajio)",
+        "Centralized SKU management with barcode/QR generation",
+        "Real-time inventory tracking & cross-platform sync",
+        "Unified order dashboard with advanced filtering and search",
+        "Returns processing and refund tracking",
+        "Profit & margin analysis per order and design",
+        "Design-wise order grouping and analytics",
+        "Role-based access with sync logs and audit trail"
       ],
-      status: "Completed",
-      statusColor: "bg-green-100 text-green-800"
+      status: "Production",
+      statusColor: "bg-blue-100 text-blue-800"
     },
     {
-      title: "URL Shortener Service",
-      description: "A simple and efficient URL shortening service with user-friendly interface. Features custom short URLs, click tracking, and basic analytics for monitoring link performance.",
-      icon: <Link className="w-8 h-8" />,
-      iconColor: "text-orange-600",
-      iconBg: "bg-orange-100",
-      technologies: ["React", "Node.js", "MongoDB", "Express.js", "Chart.js", "JWT"],
+      title: "Diamond Business Management Portal",
+      description: "A full-stack, database-driven management portal for a diamond trading business — far beyond a static site. Features secure authentication, a dynamic admin dashboard, inventory and catalog management, party (supplier/customer) tracking, and transaction handling, all backed by a live database and REST APIs for a complete back-office solution.",
+      icon: <Gem className="w-8 h-8" />,
+      iconColor: "text-yellow-600",
+      iconBg: "bg-yellow-100",
+      technologies: ["Next.js", "React", "TypeScript", "Node.js", "MongoDB", "JWT", "Tailwind CSS", "Framer Motion"],
       features: [
-        "Custom short URL generation",
-        "Click tracking and analytics",
-        "User dashboard with statistics",
-        "Link management interface",
-        "Simple and clean design",
-        "Fast URL redirection"
+        "Secure authentication with role-based admin access",
+        "Dynamic, database-driven product and inventory catalog",
+        "Admin dashboard for managing collections and stock",
+        "Party (supplier/customer) and transaction tracking",
+        "Inquiry & lead management with email notifications",
+        "Premium, responsive luxury UI with smooth animations"
       ],
-      status: "Completed",
-      statusColor: "bg-green-100 text-green-800"
+      status: "Production",
+      statusColor: "bg-blue-100 text-blue-800"
     },
     {
       title: "Doctor Appointment System",
-      description: "A modern doctor appointment booking system built with Next.js and Spring Boot. Features include doctor profiles, appointment scheduling, patient management, and secure file uploads for medical documents.",
+      description: "A modern doctor appointment booking platform built with Next.js and Spring Boot. Provides doctor profiles, real-time appointment scheduling, patient management, and secure file uploads for medical documents — with automated email notifications throughout the booking lifecycle.",
       icon: <Stethoscope className="w-8 h-8" />,
       iconColor: "text-red-600",
       iconBg: "bg-red-100",
       technologies: ["Next.js", "Spring Boot", "MongoDB", "Cloudinary", "JWT", "Tailwind CSS"],
       features: [
         "Doctor profile management",
-        "Online appointment booking",
-        "Patient registration and login",
-        "Medical document upload",
+        "Online appointment booking and scheduling",
+        "Patient registration and authentication",
+        "Secure medical document upload",
         "Appointment history tracking",
-        "Email notifications for appointments"
+        "Automated email notifications"
       ],
       status: "Completed",
       statusColor: "bg-green-100 text-green-800"
     },
     {
-      title: "Textile Company Website",
-      description: "A professional website for a textile and clothing company built with Next.js. Features modern design showcasing sarees, dresses, fabrics, and clothing collections. Includes product catalogs, company information, and contact forms. Successfully deployed and optimized for performance.",
-      icon: <Shirt className="w-8 h-8" />,
-      iconColor: "text-indigo-600",
-      iconBg: "bg-indigo-100",
-      technologies: ["Next.js", "React", "Tailwind CSS", "Vercel", "EmailJS", "Framer Motion"],
+      title: "Secure Photo Gallery System",
+      description: "A secure photo gallery management system where administrators create password-protected galleries and share them with clients via secure links. Built with a Spring Boot backend and React frontend, with cloud-based media storage and granular access control.",
+      icon: <Shield className="w-8 h-8" />,
+      iconColor: "text-emerald-600",
+      iconBg: "bg-emerald-100",
+      technologies: ["React", "Spring Boot", "MySQL", "JWT", "Cloudinary", "Bootstrap"],
       features: [
-        "Modern and responsive design",
-        "Clothing and fabric showcase",
-        "Saree and dress collections",
-        "Product catalog with categories",
-        "Company information and heritage",
-        "Contact forms with email integration",
-        "SEO optimized for fashion industry",
-        "Fast loading and performance optimized"
+        "Admin-created, password-protected galleries",
+        "Cloud-based photo upload and management",
+        "Secure user access with password verification",
+        "Download and view options for clients",
+        "Gallery sharing via secure links",
+        "Fully responsive across devices"
       ],
-      status: "Production",
-      statusColor: "bg-blue-100 text-blue-800"
-    },
-    {
-      title: "Diamond Company Website",
-      description: "An elegant and sophisticated website for a diamond company showcasing their premium collection. Built with Next.js featuring stunning product galleries, company heritage, and luxury design elements. Successfully deployed with optimal performance.",
-      icon: <Star className="w-8 h-8" />,
-      iconColor: "text-yellow-600",
-      iconBg: "bg-yellow-100",
-      technologies: ["Next.js", "React", "Tailwind CSS", "Vercel", "EmailJS", "Framer Motion"],
-      features: [
-        "Luxury design with premium aesthetics",
-        "Diamond collection showcase",
-        "Interactive product galleries",
-        "Company heritage and story pages",
-        "Contact and inquiry forms",
-        "Mobile-responsive luxury experience"
-      ],
-      status: "Production",
-      statusColor: "bg-blue-100 text-blue-800"
+      status: "Completed",
+      statusColor: "bg-green-100 text-green-800"
     }
   ];
 
@@ -123,7 +107,7 @@ const Projects = () => {
             Featured <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A showcase of my recent work and technical achievements
+            A selection of full-stack platforms and applications I've designed, built, and shipped to production.
           </p>
         </div>
 
@@ -201,15 +185,15 @@ const Projects = () => {
         {/* Project Stats */}
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="text-center bg-white rounded-xl p-6 shadow-lg">
-            <div className="text-3xl font-bold text-blue-600 mb-2">6+</div>
-            <div className="text-gray-600">Projects Completed</div>
+            <div className="text-3xl font-bold text-blue-600 mb-2">5+</div>
+            <div className="text-gray-600">Projects Delivered</div>
           </div>
           <div className="text-center bg-white rounded-xl p-6 shadow-lg">
-            <div className="text-3xl font-bold text-green-600 mb-2">4</div>
-            <div className="text-gray-600">Production Sites</div>
+            <div className="text-3xl font-bold text-green-600 mb-2">3</div>
+            <div className="text-gray-600">Production Platforms</div>
           </div>
           <div className="text-center bg-white rounded-xl p-6 shadow-lg">
-            <div className="text-3xl font-bold text-purple-600 mb-2">10+</div>
+            <div className="text-3xl font-bold text-purple-600 mb-2">15+</div>
             <div className="text-gray-600">Technologies Used</div>
           </div>
           <div className="text-center bg-white rounded-xl p-6 shadow-lg">
