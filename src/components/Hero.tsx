@@ -129,22 +129,21 @@ const Hero = () => {
             <Sparkles size={20} className="group-hover:rotate-12 transition-transform" />
             Hire Me
           </button>
-          {/* Resume buttons temporarily hidden — re-enable when ready
+          {/* Resume buttons temporarily hidden (remove the `hidden` class to re-enable) */}
           <button
             onClick={viewResume}
-            className="bg-white text-gray-800 px-8 py-3.5 rounded-full font-semibold border border-gray-200 shadow-sm hover:shadow-md hover:border-blue-300 transform hover:scale-105 transition-all duration-200 flex items-center gap-2"
+            className="hidden bg-white text-gray-800 px-8 py-3.5 rounded-full font-semibold border border-gray-200 shadow-sm hover:shadow-md hover:border-blue-300 transform hover:scale-105 transition-all duration-200 items-center gap-2"
           >
             <Eye size={20} />
             View Resume
           </button>
           <button
             onClick={downloadResume}
-            className="text-gray-700 px-6 py-3.5 rounded-full font-semibold hover:text-blue-600 transition-all duration-200 flex items-center gap-2"
+            className="hidden text-gray-700 px-6 py-3.5 rounded-full font-semibold hover:text-blue-600 transition-all duration-200 items-center gap-2"
           >
             <Download size={20} />
             Download CV
           </button>
-          */}
         </motion.div>
 
         {/* Social Links */}
