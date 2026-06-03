@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://delightful-halva-e12e88.netlify.app/sitemap.xml
