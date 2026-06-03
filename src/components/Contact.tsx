@@ -153,6 +153,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className={`bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-gray-600 ${social.color}`}
                     title={social.name}
+                    aria-label={social.name}
                   >
                     {social.icon}
                   </a>

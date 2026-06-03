@@ -149,15 +149,17 @@ const Hero = () => {
         {/* Social Links */}
         <motion.div variants={item} className="mt-8 flex justify-center gap-5">
           {[
-            { Icon: Github, href: 'https://github.com/jenilkukadiya' },
-            { Icon: Linkedin, href: 'https://www.linkedin.com/in/jenil-kukadiya-341925210/' },
-            { Icon: Mail, href: 'mailto:jenilkukadiya82@gmail.com' },
-          ].map(({ Icon, href }, i) => (
+            { Icon: Github, href: 'https://github.com/jenilkukadiya', label: 'GitHub' },
+            { Icon: Linkedin, href: 'https://www.linkedin.com/in/jenil-kukadiya-341925210/', label: 'LinkedIn' },
+            { Icon: Mail, href: 'mailto:jenilkukadiya82@gmail.com', label: 'Email' },
+          ].map(({ Icon, href, label }, i) => (
             <a
               key={i}
               href={href}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={label}
+              title={label}
               className="p-3 rounded-full bg-white/70 backdrop-blur-sm border border-gray-200 text-gray-600 hover:text-blue-600 hover:border-blue-300 hover:shadow-md transform hover:-translate-y-1 transition-all duration-200"
             >
               <Icon size={22} />

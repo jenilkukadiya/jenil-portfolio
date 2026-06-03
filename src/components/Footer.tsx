@@ -49,6 +49,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="bg-gray-800 p-3 rounded-full hover:bg-blue-600 transition-colors duration-200 transform hover:scale-110"
                   title={social.name}
+                  aria-label={social.name}
                 >
                   {social.icon}
                 </a>
