@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowDown, Download, Github, Linkedin, Mail, Eye, Sparkles } from 'lucide-react';
 
 const Hero = () => {
@@ -33,13 +33,20 @@ const Hero = () => {
     { value: '15+', label: 'Technologies' },
   ];
 
+  const reduceMotion = useReducedMotion();
+
   const container = {
     hidden: {},
-    show: { transition: { staggerChildren: 0.12, delayChildren: 0.1 } },
+    show: {
+      transition: {
+        staggerChildren: reduceMotion ? 0 : 0.12,
+        delayChildren: reduceMotion ? 0 : 0.1,
+      },
+    },
   };
   const item = {
-    hidden: { opacity: 0, y: 24 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+    hidden: reduceMotion ? { opacity: 1 } : { opacity: 0, y: 24 },
+    show: { opacity: 1, y: 0, transition: { duration: reduceMotion ? 0 : 0.6, ease: [0.22, 1, 0.36, 1] } },
   };
 
   return (
