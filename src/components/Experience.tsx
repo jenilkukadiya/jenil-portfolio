@@ -12,7 +12,7 @@ const Experience = () => {
       type: "Freelance",
       description: "Designing and shipping end-to-end web and software products for clients across industries — from AI-powered tools and ERP systems to e-commerce and management platforms — owning everything from architecture and development to deployment and support.",
       achievements: [
-        "Built and delivered 50+ projects including ERP, order-management, and AI-powered applications",
+        "Delivered end-to-end products including ERP, order-management, and AI-powered applications",
         "Engineered full-stack solutions with React, Next.js, Node.js and Python (FastAPI)",
         "Designed scalable database schemas across PostgreSQL, MongoDB and Supabase",
         "Owned the complete product lifecycle: requirements, architecture, development, deployment & maintenance",

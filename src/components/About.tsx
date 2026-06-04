@@ -38,7 +38,7 @@ const About = () => {
             About <span className="text-gradient">Me</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A dedicated software engineer with a passion for creating innovative solutions
+            A full stack engineer focused on building reliable, scalable software that drives real business results
           </p>
         </Reveal>
 
@@ -47,20 +47,20 @@ const About = () => {
           <div className="space-y-6">
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold text-gray-900">
-                Crafting Digital Experiences
+                Building Software Teams Rely On
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                I'm a passionate Full Stack Developer with experience building scalable web applications 
-                and modern software solutions. My journey in technology started with a curiosity about 
-                how things work, which led me to pursue computer engineering at Nirma University and 
-                specialize in modern web technologies.
+                I'm a Full Stack Developer who turns business ideas into production-grade software.
+                After earning my Computer Engineering degree from Nirma University, I've spent the last
+                several years designing, building, and shipping web platforms that real teams depend on
+                every day — from multi-tenant ERP and order-management systems to AI-powered tools.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                I believe in writing clean, maintainable code and creating user-centric applications that
-                solve real-world problems. My experience spans frontend development with React, Next.js and
-                TypeScript to backend services with Node.js, Spring Boot, and cloud platforms — and I've
-                delivered full-scale ERP and management systems running in production for real businesses.
-                I also have hands-on experience with No-Code/Low-Code platforms like Bubble.io for rapid prototyping.
+                I work end-to-end: React, Next.js and TypeScript on the frontend; Node.js, Spring Boot
+                and .NET on the backend; and cloud platforms like Azure and AWS for deployment. I care
+                about clean, maintainable code and clear communication, so clients always know exactly
+                where their project stands. When speed matters most, I also build rapid MVPs on
+                No-Code/Low-Code platforms like Bubble.io.
               </p>
             </div>
 
